@@ -16,6 +16,8 @@ npm i
 tsc && npm link
 # or
 npm run link
+# and finally...
+chmod u+x dist/index.js
 ```
 
 ## Usage
