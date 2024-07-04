@@ -21,7 +21,7 @@ npm run link
 ## Usage
 
 ```text
-Usage: ssmmanager -f <file> [-e <env>]
+Usage: ssmhandler -f <file> [-e <env>]
 
 Options:
       --help     Show help                                                    [boolean]
@@ -65,8 +65,8 @@ Options:
 
 ```bash
 # Dry run, just to se what happens
-ssmmanager -f /path/to/indata.json -vd
+ssmhandler -f /path/to/indata.json -vd
 
 # Same thing, without dryrun flag
-ssmmanager -f /path/to/indata.json -v
+ssmhandler -f /path/to/indata.json -v
 ```
