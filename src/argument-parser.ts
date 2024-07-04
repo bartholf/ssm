@@ -13,7 +13,7 @@ export class ArgumentParser {
   private constructor() {
     this.#args = yargs
       .usage('Usage: $0 -f <file> [-e <env>]')
-      .scriptName('ssmmanager')
+      .scriptName('ssmhandler')
       .options({
         dry: {
           type: 'boolean',
