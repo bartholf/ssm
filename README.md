@@ -35,6 +35,7 @@ Options:
 ## Example indata file
 
 ```javascript
+[
   { "Name": "DB_HOST", "Value": "db.localhost" },
   { "Name": "DB_PASSWORD", "Value": "pass" },
   { "Name": "DB_USER", "Value": "user" },
@@ -59,6 +60,7 @@ Options:
     "Type": "SecureString"
   },
   ...
+]
 ```
 
 ## Invocation Example
