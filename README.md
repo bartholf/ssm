@@ -36,13 +36,14 @@ Options:
 
 The indata file consist of one or more objects:
 
-- Name _String_ (required)
+- **Name** _String_ (required)
   The name of the setting to add, it will be prefixed with passed environment name
-- Value _String_ (required)
-- Type _"String"|"SecureString"_
+- **Value** _String_ (required)
+- **Type** _"String"|"SecureString"_
   Default: "_String_"
+- **Overwrite** _Boolean_ Default: _true_
 
-Existing attributes **will** be overwritten.
+If **Overwrite** is omitted, existing attribute will be overwritten.
 
 **Example file:**
 

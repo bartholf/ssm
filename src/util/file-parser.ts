@@ -20,16 +20,3 @@ export const FileParser = {
     }
   },
 };
-
-/*
-  getContent = (): string[][] => {
-    const content = fs.readFileSync(this.#filePath, 'utf-8');
-    const out: string[][] = [];
-    content.split(/\r?\n/).map((line) => {
-      if (line.trim() !== '') {
-        out.push(line.trim().split(/\ +/));
-      }
-    });
-    return out;
-  };
-  */

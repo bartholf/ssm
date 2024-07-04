@@ -33,7 +33,7 @@ const client = new AWS.SSMClient({});
 const putParameter = async (fnArgs: IPutParameterArg) => {
   fnArgs.Name = `/${args.env}/${fnArgs.Name}`;
   fnArgs.Type = fnArgs.Type || 'String';
-  fnArgs.Overwrite = fnArgs.Overwrite || true;
+  fnArgs.Overwrite = fnArgs.Overwrite === undefined ? true : fnArgs.Overwrite;
 
   if (!validate(fnArgs)) {
     console.error(validate.errors);
