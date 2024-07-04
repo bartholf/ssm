@@ -40,10 +40,9 @@ const putParameter = async (fnArgs: IPutParameterArg) => {
     process.exit(1);
   }
 
-  const displayArg = fnArgs;
-  fnArgs.Type === 'SecureString' && (displayArg.Value = '*****');
-
   if (args.verbose) {
+    const displayArg = fnArgs;
+    fnArgs.Type === 'SecureString' && (displayArg.Value = '*****');
     console.info([
       (args.dry ? '[Dry run] ' : '') + 'Add parameter:',
       displayArg,

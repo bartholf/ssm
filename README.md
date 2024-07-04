@@ -34,10 +34,12 @@ Options:
 
 ## Indata file
 
-The indata file consist of one or more objects:
+The indata file consist of one or more objects with the following attributes:
 
 - **Name** _String_ (required)
+
   The name of the setting to add, it will be prefixed with passed environment name
+
 - **Value** _String_ (required)
 - **Type** _"String"|"SecureString"_
   Default: "_String_"
