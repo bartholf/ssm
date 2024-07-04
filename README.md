@@ -1,6 +1,6 @@
-# About
+# SSMHandler
 
-SsmHandler is a utlitity to simplify adding and modify parameters in the AWS Parameter Store.
+A utlitity to help simplify adding and modification of parameters in the AWS Parameter Store.
 
 ## Setup
 
