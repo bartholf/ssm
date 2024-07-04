@@ -1,0 +1,29 @@
+{
+  "name": "ssm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts --help",
+    "link": "tsc && npm link",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ssmhandler": "dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/yargs": "^17.0.32",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.606.0",
+    "ajv": "^8.16.0",
+    "yargs": "^17.7.2"
+  }
+}
